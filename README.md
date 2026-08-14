@@ -13,7 +13,7 @@
 ---
 
 ## 🌐 Live Application & Submission Links
-* **Live Deployment:** [https://spend-buddy-pro.lovable.app](https://spend-buddy-pro.lovable.app)
+* **Live Deployment:** [https://sightfinai.lovable.app](https://sightfinai.lovable.app)
 * **GitHub Repository:** [https://github.com/devanshjaiswal404/HackInMotion-RICR-HIM-1155](https://github.com/devanshjaiswal404/HackInMotion-RICR-HIM-1155)
 * **System Architecture Diagram:** [`architecture-diagram.png`](./architecture-diagram.png)
 * **API Documentation:** [`api-documentation.md`](./api-documentation.md)
