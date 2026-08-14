@@ -1,1 +1,0 @@
-# HackInMotion-RICR-HIM-1155
