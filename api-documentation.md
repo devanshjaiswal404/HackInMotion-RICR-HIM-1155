@@ -1,16 +1,18 @@
-# 📚 FinSight AI — Database Architecture & API Documentation
+# 📚 FinSight AI — API & Edge Function Documentation
 
-## 1. Database Architecture & Schema Design
-FinSight AI uses PostgreSQL via Supabase with relational integrity, indexed keys, and multi-tenant scoping.
-
-### Tables Specification:
-* **`transactions`**: Stores user income and expense records with category classification, account tags (`account_name`), reference IDs, and timestamp indexing.
-* **`budgets`**: Enforces monthly spending ceilings per category with unique user-category constraints.
-* **`recurring_bills`**: Manages predicted recurring utility, telecom, and subscription due dates with payment status flags.
+## 1. Overview & Architecture
+FinSight AI utilizes Supabase REST APIs (PostgREST) backed by PostgreSQL Row Level Security (RLS) and serverless Supabase Edge Functions for secure, server-side Google Gemini AI interactions.
 
 ---
 
-## 2. Security & Row Level Security (RLS)
-* **Kernel-Level Multi-Tenancy**: Every table enforces `ENABLE ROW LEVEL SECURITY`.
-* **Policy Isolation**: All CRUD policies use `auth.uid() = user_id`, guaranteeing users cannot access or tamper with data belonging to other accounts.
-* **Secret Protection**: AI endpoints run via server-side Edge Functions (`/functions/v1/chat`); the `GEMINI_API_KEY` is never exposed to the client.
+## 2. Serverless Edge Functions
+
+### `POST /functions/v1/chat`
+Invokes the Google Gemini AI conversational financial advisor with contextual financial data.
+
+* **Endpoint URL:** `https://sightfinai.lovable.app/functions/v1/chat`
+* **Method:** `POST`
+* **Headers:**
+  ```http
+  Authorization: Bearer <SUPABASE_ANON_OR_USER_JWT>
+  Content-Type: application/json
