@@ -94,3 +94,20 @@ flowchart TB
     RLS --> T_Tx
     RLS --> T_Bg
     RLS --> T_Bills
+
+## 🚀 Quickstart & Local Setup Guide
+
+### Prerequisites
+* **Node.js**: v18.0.0+ or **Bun**: v1.1.0+
+* **Supabase CLI** (optional for local edge functions)
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/devanshjaiswal404/HackInMotion-RICR-HIM-1155.git
+cd HackInMotion-RICR-HIM-1155
+
+# Install dependencies (via Bun or npm)
+bun install
+# or
+npm install
