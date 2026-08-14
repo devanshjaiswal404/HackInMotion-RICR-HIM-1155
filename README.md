@@ -55,7 +55,7 @@ Traditional personal finance tools fail to parse messy, unstandardized Indian ba
 * Switch between domestic and foreign currencies ($USD, ₹INR, €EUR, £GBP).
 * Aggregate multiple accounts across different banking institutions under a unified dashboard.
 
----
+--
 
 ## 🏗️ System Architecture
 
