@@ -21,10 +21,10 @@ export const Route = createFileRoute("/")({
         content: "FinSight AI is a private finance tracker: log transactions, set category budgets and watch your financial health score improve.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://spend-bud-buddy.lovable.app/" },
+      { property: "og:url", content: "https://sightfinai.lovable.app/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://spend-bud-buddy.lovable.app/" }],
+    links: [{ rel: "canonical", href: "https://sightfinai.lovable.app/" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -34,13 +34,13 @@ export const Route = createFileRoute("/")({
             {
               "@type": "Organization",
               name: "FinSight AI",
-              url: "https://spend-bud-buddy.lovable.app/",
-              logo: "https://spend-bud-buddy.lovable.app/favicon.ico",
+              url: "https://sightfinai.lovable.app/",
+              logo: "https://sightfinai.lovable.app/favicon.ico",
             },
             {
               "@type": "WebSite",
               name: "FinSight AI",
-              url: "https://spend-bud-buddy.lovable.app/",
+              url: "https://sightfinai.lovable.app/",
               description:
                 "Private finance tracker for transactions, category budgets and a financial health score.",
             },
